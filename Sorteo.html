@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Ventura Sorteo</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Ventura Sorteo</h1>
+
+    <div class="form-group">
+      <label for="participant-name">Nombre:</label>
+      <input type="text" id="participant-name" placeholder="Ingrese el nombre del participante">
+    </div>
+
+    <div class="form-group">
+      <label for="participant-number">Número:</label>
+      <input type="tel" id="participant-number" placeholder="Ingrese el número del participante">
+    </div>
+
+    <div class="button-container">
+      <button class="add-participant-btn">Agregar Participante</button>
+      <button class="start-draw-btn">Realizar Sorteo</button>
+      <button class="reset-draw-btn">Reiniciar Sorteo</button>
+    </div>
+
+    <table class="participant-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Número</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="participant-list">
+        <!-- Los participantes se mostrarán aquí -->
+      </tbody>
+    </table>
+
+    <div id="winner"></div>
+
+    <div id="sound-toggle">
+      <i class="bi bi-volume-up"></i>
+      <span>Activar Sonido</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
