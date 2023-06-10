@@ -116,6 +116,135 @@ h1 {
 #sound-toggle {
   display: flex;
   align-items: center;
+  
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#sound-toggle:hover {
+  color: #666666;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button.add-participant-btn {
+  background-color: #4caf50;
+}
+
+.button-container button.start-draw-btn {
+  background-color: #2196f3;
+}
+
+.button-container button.reset-draw-btn {
+  background-color: #f44336;
+}
+
+.button-container button:hover {
+  opacity: 0.8;
+}
+
+.participant-table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.participant-table th,
+.participant-table td {
+  padding: 12px;
+  border: 1px solid #cccccc;
+  text-align: left;
+}
+
+.participant-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333333;
+}
+
+.participant-table .delete-btn {
+  padding: 5px;
+  border: none;
+  background: none;
+  color: #ff0000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.participant-table .delete-btn:hover {
+  color: #cc0000;
+}
+
+#winner {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #333333;
+  font-size: 24px;
+}
+
+#sound-toggle {
+  display: flex;
+  align-items: center;
   justify-content: center;
   margin-top: 20px;
   font-size: 24px;
